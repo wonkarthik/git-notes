@@ -10,7 +10,11 @@ Branch naming convention is hotfix/x-x-x. The x[major release]-x[release]-x[hot-
 When working with hotfix branches, you should open up a "pull request" in GitHub so that your team members can see what you're preparing to fix. This is considered as the best practise!
 
 ```
+<<<<<<< HEAD
 ** Scenario
+=======
+## Scenario
+>>>>>>> f7fdfbec053016b1c3aa04d96579184c97931ddd
 
 A few days after releasing release tag 0.1.0, I introduced some new files and features to develop branch. This is all normal for now. I suddenly realised that the message in 'one.txt' is wrong so I urgently need to change it.
 
