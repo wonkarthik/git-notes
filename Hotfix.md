@@ -24,7 +24,7 @@ Step 1
 
 Make sure we're on develop branch.
 
-
+```sh
 $ git branch
 * develop
   master
@@ -147,9 +147,6 @@ If you go to GitHub, there will be a notification bar that will ask you to open 
 
 
 
-
-
-
 Step 6
 
 At this point "peer review" takes place against the "pull request" in GitHub. If everyone in your team is happy with the work you've done in hotfix branch, there is nothing to worry about otherwise you keep working to make everyone happy. This process just shows everyone what will be fixed. Do not use "Merge pull request" button.
@@ -248,13 +245,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 # Conflict
 $ cat one.txt 
-<<<<<<< HEAD
-feature/hello-world # In the Step 3 above where hotfix took place, we changed this line with 'feature/hello-inanzzz'
-feature/hello-mars
-feature/hello-jupiter
-=======
 feature/hello-inanzzz
->>>>>>> hotfix/0.1.1
 
 # Resolved
 $ cat one.txt 
@@ -332,3 +323,5 @@ $ git remote update
 $ git checkout 0.1.1
 $ git pull origin 0.1.1
 $ cap production deploy
+
+```
