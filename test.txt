@@ -1,1 +1,1 @@
-This is Git notes
+This is Git tutorial 
