@@ -9,12 +9,12 @@ Branch naming convention is hotfix/x-x-x. The x[major release]-x[release]-x[hot-
 
 When working with hotfix branches, you should open up a "pull request" in GitHub so that your team members can see what you're preparing to fix. This is considered as the best practise!
 
-
+```
 ## Scenario
 
 A few days after releasing release tag 0.1.0, I introduced some new files and features to develop branch. This is all normal for now. I suddenly realised that the message in 'one.txt' is wrong so I urgently need to change it.
 
-
+```
 Preparation
 
 These steps are compulsory before start working on a new hotfix branch because our local branch might be behind remote copy.
