@@ -325,3 +325,62 @@ $ git pull origin 0.1.1
 $ cap production deploy
 
 ```
+```sh
+## Overview 
+
+# 1. Checked out into develop branch
+git checkout develop
+ 
+# 2. Fetched all remote updates
+git remote update
+ 
+# 3. Update local develop branch with remote copy
+git pull origin develop
+ 
+# 4. Checked out into master branch
+git checkout master
+ 
+# 5. Update local master branch with remote copy
+git pull origin master
+ 
+# 6. Created a hotfix branch that tracks origin/master
+git checkout -b hotfix/0.1.1 origin/master
+ 
+# 7. Did some fixes and committed to it
+ 
+# 8. Pushed hotfix branch to remote repository
+git push origin hotfix/0.1.1
+ 
+# 9. Opened a "pull request" in GitHub for team to verify the hotfix
+ 
+# 10. Checkout into master branch
+git checkout master
+ 
+# 11. Merged hotfix branch into master branch
+git merge hotfix/0.1.1
+ 
+# 12. Tagged the hotfix point by creating a new tag
+git tag -a 0.1.1 -m 'Create hotfix tag 0.1.1'
+ 
+# 13. Pushed master branch to remote repository
+git push origin master
+ 
+# 14. Pushed the tags to remote repository
+git push origin --tags
+ 
+# 15. Checkout into develop branch
+git checkout develop
+ 
+# 16. Merged hotfix branch into develop branch
+git merge hotfix/0.1.1
+ 
+# 17. Pushed develop branch to remote repository
+git push origin develop
+ 
+# 18. Removed hotfix branch from the local repository
+git branch -D hotfix/0.1.1
+ 
+# 19. Removed hotfix branch from the remote repository
+git push origin :hotfix/0.1.1
+
+```
