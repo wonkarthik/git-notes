@@ -332,6 +332,7 @@ $ git pull origin 0.1.1
 $ cap production deploy
 ```
 
+```sh
 Overview
 
 In short terms, this is what we did above.
