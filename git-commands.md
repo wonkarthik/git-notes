@@ -1,7 +1,8 @@
 
-## Commands below are the most commonly used in daily working life. If you want to learn the best practises of branching model, make sure you read, understand and use git-flow cheatsheet and A successful [Git branching model](https://nvie.com/posts/a-successful-git-branching-model/).
+# Commands below are the most commonly used in daily working life. If you want to learn the best practises of branching model, make sure you read, understand and use git-flow cheatsheet and A successful [Git branching model](https://nvie.com/posts/a-successful-git-branching-model/).
 
 ```sh
+
 git add file_name
 
 Stages only given file. git add
@@ -185,4 +186,5 @@ Unlike git log, this shows only commit IDs and the messages. git-log
 git log --graph
 
 Prints git commit history as in graphical presentation.
+
 ```
